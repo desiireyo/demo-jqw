@@ -46,7 +46,7 @@
             </div>
             <div id="<?php echo $menucod ?>window0" >
                 <div id="box1_head">ข้อมูลส่วนตัว</div>
-                <div style="overflow: hidden;">
+
                 <div id="box1">
                     <table>
                         <tr>
@@ -133,7 +133,7 @@
                         </tr>
                     </table>
                 </div><!-- end id box1 -->
-            </div>
+
             </div>
 
         </div>
@@ -143,7 +143,7 @@
                 <div id="box2">
                     <table>
                         <tr>
-                            <td>อาชีพ</td>
+                            <td><div id="box2_career">อาชีพ</div></td>
                             <td align="left" class="group-input">
                                 <div id="<?php echo $menucod ?>career" class="input-button">
                                     <input type="text" id="<?php echo $menucod ?>career1" />
@@ -152,11 +152,11 @@
                                 <div id="<?php echo $menucod ?>careerdesc" class="input-desc"></div>
                             </td>
                         </tr>
-                        <tr>
+                        <tr id="box2_rank">
                             <td>ตำแหน่ง</td>
                             <td><input type="text" id="<?php echo $menucod ?>rank" value=""></td>
                         </tr>
-                        <tr>
+                        <tr id="box2_ageofwork">
                             <td>อายุงาน (ปี/เดือน)</td>
                             <td>
                                 <table>
@@ -172,20 +172,20 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>รายได้ต่อเดือน</td>
+                            <td><div id="box2_salary">รายได้ต่อเดือน</div></td>
                             <td><div id='<?php echo $menucod ?>salary'></div></td>
                         </tr>
-                        <tr>
+                        <tr id="box2_othersalary">
                             <td>รายได้อื่นๆต่อเดือน</td>
                             <td><div id='<?php echo $menucod ?>other_salary'></div></td>
                         </tr>
-                        <tr>
+                        <tr id="box2_compnm">
                             <td>ชื่อสถานที่ทำงาน</td>
                             <td><input type="text" id="<?php echo $menucod ?>compnm" value=""></td>
                         </tr>
                         <tr>
                             <td>ที่อยู่ที่ทำงาน</td>
-                            <td><input type="text" id="<?php echo $menucod ?>compaddr" value=""></td>
+                            <td><textarea id="<?php echo $menucod ?>compaddr" ></textarea></td>
                         </tr>
                         <tr>
                             <td>ประเภทธุรกิจ</td>
@@ -200,37 +200,41 @@
             </div>
 
             <div id="<?php echo $menucod ?>window2">
-                <div>สถานภาพสมรส</div>
+                <div id="box3_head">สถานภาพสมรส</div>
                 <div style="overflow: hidden;">
                     <div id="box3">
                         <table>
-                        <tr>
+                        <tr id="box3_family_status">
                             <td>สถานภาพ</td>
                             <td><div id="<?php echo $menucod ?>family_status"></div></td>
                         </tr>
-                        <tr>
+                        <tr id="box3_spouse_nm">
                             <td>ชื่อ/นามสกุล</td>
                             <td><input type="text" id="<?php echo $menucod ?>spouse_nm" value=""></td>
                         </tr>
-                        <tr>
+                        <tr id="box3_spouse_telp">
                             <td>เบอร์มือถือ</td>
                             <td><input type="text" id="<?php echo $menucod ?>spouse_telp" value=""></td>
                         </tr>
-                        <tr>
+                        <tr id="box3_spouse_career">
                             <td>อาชีพ</td>
                             <td><input type="text" id="<?php echo $menucod ?>spouse_career" value=""></td>
                         </tr>
-                        <tr>
+                        <tr id="box3_spouse_compnm">
                             <td>ชื่อสถานที่ทำงาน</td>
                             <td><input type="text" id="<?php echo $menucod ?>spouse_compnm" value=""></td>
                         </tr>
-                        <tr>
+                        <tr id="box3_spouse_compaddr">
                             <td>ที่อยู่ที่ทำงาน</td>
                             <td><input type="text" id="<?php echo $menucod ?>spouse_compaddr" value=""></td>
                         </tr>
-                        <tr>
+                        <tr id="box3_spouse_salary">
                             <td>รายได้</td>
                             <td><input type="text" id="<?php echo $menucod ?>spouse_salary" value=""></td>
+                        </tr>
+                        <tr id="box3_authorize">
+                            <td>ผู้มีอำนาจลงนาม</td>
+                            <td><textarea id="<?php echo $menucod ?>authorize" rows="8" cols="40"></textarea></td>
                         </tr>
                     </table>
                     </div>
@@ -238,21 +242,19 @@
             </div>
 
             <div id="<?php echo $menucod ?>window3">
-                <div>
-                    ลักษณะที่อยู่อาศัยปัจจุบัน
-                </div>
+                <div id="box4_head">ลักษณะที่อยู่อาศัยปัจจุบัน</div>
                 <div style="overflow: hidden;">
                     <div id="box4">
                         <table>
                         <tr>
-                            <td>ลักษณะที่อยู่อาศัย</td>
+                            <td><div id="box4_home_style">ลักษณะที่อยู่อาศัย</div></td>
                             <td><div id="<?php echo $menucod ?>home_style"></div></td>
                         </tr>
                         <tr>
-                            <td>สถานภาพที่อยู่อาศัย</td>
+                            <td><div id="box4_home_status">สถานภาพที่อยู่อาศัย</div></td>
                             <td><div id="<?php echo $menucod ?>home_status"></div></td>
                         </tr>
-                        <tr>
+                        <tr id="box4_lived">
                             <td>อาศัยมานาน (ปี / เดือน)</td>
                             <td>
                                 <table>
@@ -506,7 +508,7 @@
         $("#"+menucod+"other_salary").jqxComboBox({ source: source, theme: theme, promptText: "Please choose...",width: '250', height: '25'});
 
         $("#"+menucod+"compnm").jqxInput({ height: 23, width: 250, theme: theme, maxLength: 100 });
-        $("#"+menucod+"compaddr").jqxInput({ height: 23, width: 250, theme: theme, maxLength: 100 });
+        $("#"+menucod+"compaddr").jqxInput({ height: 55, width: 250, theme: theme, maxLength: 100 });
         // Create a jqxComboBox
         var source = [
                     "ข้าราชการ/รัฐวิสาหกิจ",
@@ -552,6 +554,8 @@
         $("#"+menucod+"spouse_compaddr").jqxInput({ height: 23, width: 250, theme: theme, maxLength: 100 });
         $("#"+menucod+"spouse_career").jqxInput({ height: 23, width: 250, theme: theme, maxLength: 100 });
         $("#"+menucod+"spouse_salary").jqxInput({ height: 23, width: 250, theme: theme, maxLength: 100 });
+        $("#"+menucod+"authorize").jqxInput({ width: 250, height: 100, theme: theme });
+        $("#box3_authorize").toggle('hide');
 
         // Create a jqxComboBox
         var source = [
@@ -584,12 +588,13 @@
             width: 800,
             mode: 'docked'
         });
-        //$('#docking').jqxDocking('importLayout', '{"panel0": {"<?php echo $menucod ?>window4":{"collapsed":false},"<?php echo $menucod ?>window0":{"collapsed":false}},"panel1": {"<?php echo $menucod ?>window1":{"collapsed":false},"<?php echo $menucod ?>window2":{"collapsed":false},"<?php echo $menucod ?>window3":{"collapsed":false}},"floating":{},"orientation": "horizontal"}');
 
         $('#docking').jqxDocking('hideAllCloseButtons');
         //$('#docking').jqxDocking('pinWindow', menucod+'window0');
 
         $('#box1').jqxPanel({ width: 400, height: 1000 });
+        //$('#box3').jqxPanel({ width: 400, height: 210 });
+        $("#"+menucod+"window2").jqxWindow({height:"250"});
 
         $('#docking2').jqxDocking({
             theme:theme,
@@ -924,10 +929,33 @@
                     $("#box1_religion").toggle('show');
                     $("#box1_degree").toggle('show');
 
-                    //$('#box1').jqxPanel({autoUpdate:true});
-                    $("#"+menucod+"window0").jqxWindow({height:"1000"});
-                    //$("#"+menucod+"window0").jqxDocking({width:"400px" , height:"1000px"});
-                    //$("#"+menucod+"window0").jqxDocking('setWindowProperty', 'contactWindow', 'height', 1000);
+                    $("#box2_career").text("อาชีพ");
+                    $("#box2_salary").text("รายได้ต่อเดือน");
+                    $("#box2_othersalary").toggle('show');
+                    $("#box2_rank").toggle('show');
+                    $("#box2_compnm").toggle('show');
+                    $("#box2_ageofwork").toggle('show');
+
+                    $("#box3_head").text('สถานภาพสมรส');
+                    $("#box3_spouse_nm").toggle('show');
+                    $("#box3_family_status").toggle('show');
+                    $("#box3_spouse_telp").toggle('show');
+                    $("#box3_spouse_career").toggle('show');
+                    $("#box3_spouse_compnm").toggle('show');
+                    $("#box3_spouse_salary").toggle('show');
+                    $("#box3_spouse_compaddr").toggle('show');
+                    $("#box3_authorize").toggle('hide');
+
+                    $("#box4_head").text('ลักษณะที่อยู่อาศัยปัจจุบัน');
+                    $("#box4_home_style").text('ลักษณะที่อยู่อาศัย');
+                    $("#box4_home_status").text('สถานภาพที่อยู่อาศัย');
+                    $("#box4_lived").toggle('show');
+
+                    $("#"+menucod+"window0").jqxWindow({height:"1050"});
+                    $("#"+menucod+"window1").jqxWindow({height:"340"});
+                    $("#"+menucod+"window2").jqxWindow({height:"250"});
+                    $("#"+menucod+"window3").jqxWindow({height:"125"});
+                    //$('#docking').jqxDocking('expandWindow', menucod+'window2');
 
                 }else if(value==2){
                     //เปลี่ยนประเภท นิติบุคคล
@@ -957,10 +985,34 @@
                     $("#box1_religion").toggle('hide');
                     $("#box1_degree").toggle('hide');
 
-                    //$('#box1').jqxPanel({autoUpdate:true});
-                    $("#"+menucod+"window0").jqxWindow({height:"350"});
-                    //$("#"+menucod+"window0").jqxDocking({height:"350px"});
-                    //$("docking").jqxDocking(height:"350px", "<?php //echo $menucod ?>window0");
+                    $("#box2_career").text("ลักษณะอาชีพ");
+                    $("#box2_salary").text("ทุนจดทะเบียน");
+                    $("#box2_othersalary").toggle('hide');
+                    $("#box2_rank").toggle('hide');
+                    $("#box2_compnm").toggle('hide');
+                    $("#box2_ageofwork").toggle('hide');
+
+                    $("#box3_head").text('ผู้มีอำนาจลงนาม');
+                    $("#box3_spouse_nm").toggle('hide');
+                    $("#box3_family_status").toggle('hide');
+                    $("#box3_spouse_telp").toggle('hide');
+                    $("#box3_spouse_career").toggle('hide');
+                    $("#box3_spouse_compnm").toggle('hide');
+                    $("#box3_spouse_salary").toggle('hide');
+                    $("#box3_spouse_compaddr").toggle('hide');
+                    $("#box3_authorize").toggle('show');
+
+                    $("#box4_head").text('ลักษณะที่อยู่บริษัท');
+                    $("#box4_home_style").text('ลักษณะที่อยู่บริษัท');
+                    $("#box4_home_status").text('สถานภาพที่อยู่บริษัท');
+                    $("#box4_lived").toggle('hide');
+
+                    $("#"+menucod+"window0").jqxWindow({height:"340"});
+                    $("#"+menucod+"window1").jqxWindow({height:"220"});
+                    $("#"+menucod+"window2").jqxWindow({height:"140"});
+                    $("#"+menucod+"window3").jqxWindow({height:"100"});
+                    //$('#docking').jqxDocking('closeWindow', menucod+'window2');
+                    //$('#docking').jqxDocking('collapseWindow', menucod+'window2');
                 }
             }
         });
